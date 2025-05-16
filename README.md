@@ -45,6 +45,12 @@ Run the installer script again and confirm removal when prompted.
 
 ---
 
+## 🐞 Known Bugs
+
+- ❌ You cannot set the same hour as both the start and end of quiet hours (e.g., 22 to 22).
+
+---
+
 ## 📋 TODO
 
 - [x] Mute volume on suspend  
