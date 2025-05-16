@@ -30,7 +30,7 @@ When the Steam Deck is suspended, the service saves the current volume and sets 
 
 ## Installation  
 
-1. Download the latest release file from [here](https://github.com/LordQuerix/MuteTheDeck/releases/latest)  
+1. Download the latest release file from [here](https://github.com/LordQuerix/MuteTheDeck/releases/latest/MuteTheDeck.sh)  
 2. Place the downloaded file on your Desktop  
 3. Open a terminal, navigate to your Desktop folder and run the installer script by typing `./MuteTheDeck.sh` (or just double click downloaded file)
 
