@@ -48,7 +48,7 @@ Run the installer script again and confirm removal when prompted.
 
 - [x] Mute volume on suspend  
 - [x] Restore volume on resume, except during user-defined quiet hours  
-- [ ] Updater for easy plugin/script updates  
+- [ ] Updater
 - [ ] Ability to change quiet hours without reinstalling  
 - [ ] Code optimization and cleanup
 
