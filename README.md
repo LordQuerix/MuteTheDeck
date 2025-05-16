@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="MuteTheDeck.png" alt="MuteTheDeckBanner" width="300" />
+  <img src="MuteTheDeck.png" alt="MuteTheDeckBanner" width="600" />
 </p>
 
 # 🎧 MuteTheDeck 🔇
