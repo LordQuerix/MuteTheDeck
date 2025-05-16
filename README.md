@@ -42,4 +42,13 @@ If the program is already installed, the installer will ask if you want to unins
 
 Run the installer script again and confirm removal when prompted.
 
+---
+
+## TODO
+
+- [x] Mute volume on suspend  
+- [x] Restore volume on resume, except during user-defined quiet hours  
+- [ ] Updater for easy plugin/script updates  
+- [ ] Ability to change quiet hours without reinstalling  
+- [ ] Code optimization and cleanup
 
