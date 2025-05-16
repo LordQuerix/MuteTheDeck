@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ### === MuteTheDeck Installer / Uninstaller ===
-### Author: YourName
+### Author: LordQuerix
 ### Description: Installs systemd services that mute Steam Deck on suspend and restore volume on resume outside quiet hours
 
 set -e
