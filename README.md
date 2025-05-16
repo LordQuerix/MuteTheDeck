@@ -8,13 +8,13 @@
 
 ---
 
-## Why i made this
+## ❓ Why i made this
 
 I made this script just so I can use my Steam Deck at night without worrying that the game I’m playing at full volume will wake everyone up at home XD
 
 ---
 
-## What it does & features
+## ❓ What it does & features
  
 - 🔕 Automatically mutes volume on suspend  
 - 🔊 Restores previous volume on resume, but only outside quiet hours  
@@ -24,12 +24,12 @@ I made this script just so I can use my Steam Deck at night without worrying tha
 
 ---
 
-## How does it work?  
+## 🤔 How does it work?  
 When the Steam Deck is suspended, the service saves the current volume and sets it to zero. Upon resume, if outside the quiet hours, it restores the saved volume.
 
 ---
 
-## Installation  
+## ✅ Installation  
 
 1. Download the latest release file from [here](https://github.com/LordQuerix/MuteTheDeck/releases/latest/download/MuteTheDeck.sh)  
 2. Place the downloaded file on your Desktop  
@@ -39,13 +39,13 @@ If the program is already installed, the installer will ask if you want to unins
 
 ---
 
-## Uninstallation  
+## ❌ Uninstallation  
 
 Run the installer script again and confirm removal when prompted.
 
 ---
 
-## TODO
+## 📋 TODO
 
 - [x] Mute volume on suspend  
 - [x] Restore volume on resume, except during user-defined quiet hours  
