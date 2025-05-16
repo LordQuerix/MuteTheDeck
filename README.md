@@ -10,7 +10,7 @@
 
 ## ❓ Why i made this
 
-I made this script just so I can use my Steam Deck at night without worrying that the game I’m playing at full volume will wake everyone up at home XD
+I made this script just so I can power on my Steam Deck at night without worrying that the game I’m playing at full volume will wake everyone up at home XD
 
 ---
 
