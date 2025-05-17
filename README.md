@@ -31,17 +31,15 @@ When the Steam Deck is suspended, the service saves the current volume and sets 
 
 ## ✅ Installation  
 
-1. Download the latest release file from [here](https://github.com/LordQuerix/MuteTheDeck/releases/latest/download/MuteTheDeck.sh)  
+1. Download the latest release file from [here](https://github.com/LordQuerix/MuteTheDeck/releases/latest/download/MuteTheDeck.desktop)  
 2. Place the downloaded file on your Desktop  
-3. Open a terminal, navigate to your Desktop folder and run the installer script by typing `./MuteTheDeck.sh` (or just double click downloaded file)
-
-If the program is already installed, the installer will ask if you want to uninstall it.
+3. Open downloaded file
 
 ---
 
 ## ❌ Uninstallation  
 
-Run the installer script again and confirm removal when prompted.
+Run the installer again and select Uninstall
 
 ---
 
@@ -55,7 +53,8 @@ Run the installer script again and confirm removal when prompted.
 
 - [x] Mute volume on suspend  
 - [x] Restore volume on resume, except during user-defined quiet hours  
-- [ ] Updater
-- [ ] Ability to change quiet hours without reinstalling  
+- [x] Updater
+- [x] Ability to change quiet hours without reinstalling  
 - [ ] Code optimization and cleanup
+- [ ] fix all bugs
 
