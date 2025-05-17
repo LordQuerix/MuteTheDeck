@@ -20,7 +20,6 @@ I made this script just so I can power on my Steam Deck at night without worryin
 - 🔊 Restores previous volume on resume, but only outside quiet hours  
 - ⏳ Allows you to define your own quiet hours (e.g., night time)  
 - ⚙️ Easy installer with uninstall support  
-- 🐧 Works on Steam Deck and other Linux systems using systemd  
 
 ---
 
