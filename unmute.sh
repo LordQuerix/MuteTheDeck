@@ -1,23 +1,27 @@
 #!/bin/bash
 
+echo "=== Unmute script run at $(date) ==="
+
 CONFIG_FILE="/opt/MuteTheDeck/config.conf"
-source "$CONFIG_FILE"
-
-HOUR=$(date +"%H")
-
-if (( QUIET_START == QUIET_END )); then
-  echo "Quiet hour still active (single hour match)"
-  exit 0
+if [[ -f "$CONFIG_FILE" ]]; then
+  source "$CONFIG_FILE"
+else
+  echo "Error: Config file not found: $CONFIG_FILE"
+  exit 1
 fi
 
+HOUR=$(date +"%H")
+echo "Current hour: $HOUR"
+
+# Check quiet hours logic
 if (( QUIET_START < QUIET_END )); then
   if (( HOUR >= QUIET_START && HOUR < QUIET_END )); then
-    echo "Still within quiet hours"
+    echo "Within quiet hours ($QUIET_START-$QUIET_END). Not restoring volume."
     exit 0
   fi
 else
   if (( HOUR >= QUIET_START || HOUR < QUIET_END )); then
-    echo "Still within quiet hours (overnight)"
+    echo "Within quiet hours ($QUIET_START-$QUIET_END). Not restoring volume."
     exit 0
   fi
 fi
@@ -25,8 +29,12 @@ fi
 if [[ -f /tmp/deck_volume_backup.txt ]]; then
   SAVED_VOL=$(cat /tmp/deck_volume_backup.txt)
   echo "Restoring volume to $SAVED_VOL"
-  pactl set-sink-volume @DEFAULT_SINK@ "$SAVED_VOL"
-  rm /tmp/deck_volume_backup.txt
+  if pactl set-sink-volume @DEFAULT_SINK@ "$SAVED_VOL"; then
+    echo "Volume restored successfully."
+    rm /tmp/deck_volume_backup.txt
+  else
+    echo "Failed to restore volume."
+  fi
 else
-  echo "No backup file found"
+  echo "No volume backup found."
 fi
