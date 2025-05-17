@@ -1,0 +1,12 @@
+[Unit]
+Description=MuteTheDeck: Mute volume on suspend
+Before=sleep.target
+
+[Service]
+Type=oneshot
+User=deck
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+ExecStart=/opt/MuteTheDeck/mute.sh
+
+[Install]
+WantedBy=sleep.target

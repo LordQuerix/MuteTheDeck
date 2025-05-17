@@ -1,0 +1,12 @@
+[Unit]
+Description=MuteTheDeck: Restore volume on resume (if not during quiet hours)
+After=suspend.target
+
+[Service]
+Type=oneshot
+User=deck
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+ExecStart=/opt/MuteTheDeck/unmute.sh
+
+[Install]
+WantedBy=suspend.target
