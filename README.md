@@ -42,18 +42,12 @@ Run the installer again and select Uninstall
 
 ---
 
-## 🐞 Known Bugs
-
-- ❌ You cannot set the same hour as both the start and end of quiet hours (e.g., 22 to 22).
-
----
-
 ## 📋 TODO
 
 - [x] Mute volume on suspend  
 - [x] Restore volume on resume, except during user-defined quiet hours  
 - [x] Updater
 - [x] Ability to change quiet hours without reinstalling  
-- [ ] Code optimization and cleanup
-- [ ] fix all bugs
+- [x] Code optimization and cleanup
+
 
